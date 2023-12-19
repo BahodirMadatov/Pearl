@@ -1,0 +1,9 @@
+гугл нельзя
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+всем можно
+User-agent: *
+Allow: /
+
+Sitemap: https://saidazim.madagascar/simtemap.xml
