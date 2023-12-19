@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'PlayfairDisplay', sans-serif;
+    border: none;
+    outline: none;
+
+    &:focus {
+        border: none;
+        outline: none;
+    }
+}
+
+.reservation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media(max-width: 1370px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.reserv {
+    &__box {
+        padding: 150px 85px;
+        max-width: 790px;
+        width: 100%;
+
+        @media(max-width: 1575px) {
+            padding: 50px 35px;
+        }
+
+        @media(max-width: 740px) {
+            max-width: 500px;
+        }
+
+        @media(max-width: 480px) {
+            max-width: 300px;
+            padding: 30px 15px;
+        }
+    }
+
+    &__input {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        padding-bottom: 70px;
+
+        @media(max-width: 740px) {
+            gap: 20px;
+            padding-bottom: 40px;
+        }
+
+        @media(max-width: 480px) {
+            gap: 10px;
+            padding-bottom: 40px;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &__str {
+        border-bottom: 1px solid black;
+        font-size: 18px;
+        line-height: 21px;
+        color: #838383;
+    }
+
+    &__reserv {
+        display: flex;
+        gap: 70px;
+        @media(max-width: 480px) {
+            gap: 10px;
+        }
+    }
+
+    &__date {
+        display: flex;
+        align-items: center;
+        width: 265px;
+        font-family: 'Playfair Display';
+        font-size: 18px;
+        color: #000000;
+        @media(max-width: 480px) {
+            width: 150px;
+            font-size: 8px;
+        }
+    }
+
+    &__link {
+        padding: 14px 80px;
+        border: 1px solid #000000;
+        color: #000000;
+        font-size: 18px;
+        @media(max-width: 740px) {
+            padding: 8px 40px;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+        }
+        @media(max-width: 480px) {
+            padding: 8px 15px;
+            font-size: 10px;
+        }
+    }
+}
+
+.table {
+    &__box {
+        padding: 50px;
+        background: #F4EFEC;
+        height: 100%;
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: 400;
+        color: #000000;
+        padding-bottom: 30px;
+    }
+
+    &__cont {
+        max-width: 730px;
+        width: 100%;
+        font-size: 20px;
+        padding-bottom: 50px;
+
+        &-extra {
+            max-width: 730px;
+            width: 100%;
+            font-size: 20px;
+        }
+    }
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media(max-width: 1240px) {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__box {
+        position: relative;
+        display: flex;
+        padding: 50px 50px 50px;
+        gap: 100px;
+        align-items: center;
+
+        @media(max-width: 1775px) {
+            padding: 10px;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        @media(max-width: 720px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__logo {
+        padding-right: 30px;
+
+        @media(max-width: 1775px) {
+            padding-right: 0;
+            width: 150px;
+            height: 145px;
+        }
+
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+.cont {
+    &__title {
+        width: 93px;
+        height: 25px;
+        font-size: 20px;
+        color: #000000;
+        font-weight: 400;
+    }
+
+    &__list {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__link {
+        font-size: 15px;
+        line-height: 20px;
+        color: #000000;
+    }
+}
+
+.loc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__title {
+        width: 100px;
+        font-weight: 400;
+        font-size: 20px;
+        color: #000000;
+    }
+
+    &__cont {
+        font-size: 16px;
+        color: #000000;
+    }
+}
+
+iframe {
+    display: block;
+    width: 100%;
+}

@@ -1,0 +1,115 @@
+.main__enu{
+    background: #fff;
+}
+
+
+.slider{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    &__item{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -10;
+        opacity: 0;
+        transition: 0.3s linear;
+        &.active{
+            position: relative;
+            z-index: 10;
+            opacity: 1;
+        }
+    }
+    &__pagination{
+        position: absolute;
+        z-index: 11;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 40px;
+        display: flex;
+        padding: 7px 15px;
+        border-radius: 12px;
+    }
+    &__pagination li {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin: 0 10px;
+        background: #C4C4C4B2;
+        cursor: pointer;
+        &.active{
+            background: white;
+        }
+    }
+}
+
+.enu__img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+.main{
+    &__box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    &__slider-lines{
+        position: relative;
+    }
+    &__menu{
+        padding: 50px;
+        max-width: 900px;
+        width: 100%;
+    }
+}
+
+.menu{
+    &__title{
+        display: flex;
+        justify-content: center;
+        font-size: 48px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+    &__box{
+        overflow-y: scroll;
+        max-height: 498px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.dish{
+    &__title{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    &__descr{
+        max-width: 765px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 24px;
+        color: #000000;
+        border-bottom-style: dotted;
+    }
+}
+
+@media(max-width: 1880px) {
+    .main__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__menu{
+    }
+}

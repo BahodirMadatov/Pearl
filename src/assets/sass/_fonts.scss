@@ -1,0 +1,11 @@
+$fonts: ('PlayfairDisplay', 'Italic', 400),
+    ('TimesNewRoman', 'Regular', 400),
+    ('PlayfairDisplay', 'Regular', 400);
+
+@each $font, $mod, $w in $fonts {
+    @font-face {
+        font-family: $font;
+        src: url("../fonts/#{$font}-#{$mod}.ttf");
+        font-weight: $w;
+    }
+}

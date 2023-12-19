@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'PlayfairDisplay', sans-serif;
+    border: none;
+    outline: none;
+    &:focus{
+        border: none;
+        outline: none;
+    }
+}
+
+main{
+    background: #F4EFEC;
+}
+.fbox{
+    &__title{
+        padding-bottom: 30px;
+        font-size: 48px;
+        font-weight: 400;
+        @media(max-width: 1775px) {
+            padding-bottom: 10px;
+            font-size: 20px;
+        }
+        @media(max-width: 720px) {
+            font-size: 13px;
+        }
+    }
+    &__cont{
+        font-size: 20px;
+        padding-right: 180px;
+        line-height: 45px;
+        font-family: 'Playfair Display';
+        padding-bottom: 50px;
+        @media(max-width: 1775px) {
+            padding-bottom: 20px;
+            font-size: 12px;
+        }
+        @media(max-width: 1240px){
+            line-height: 12px;
+            padding-right: 50px;
+        }
+        @media(max-width: 600px) {
+            font-size: 7px;
+            padding-right: 20px;
+            line-height: 7px;
+        }
+    }
+    &__link{
+    font-family: 'Playfair Display';
+    font-size: 18px;
+    color: #000000;
+    padding: 13px 98px;
+    border: 1px solid #000000;
+        &-right{
+            font-family: 'Playfair Display';
+            font-size: 18px;
+            color: #000000;
+            padding: 13px 98px;
+            border: 1px solid #000000;
+            @media(max-width: 1775px){
+                padding: 5px 50px;
+                font-size: 12px;
+            }
+            @media(max-width: 720px) {
+                padding: 5px 20px;
+                font-size: 8px;
+            }
+        }
+    @media(max-width: 1775px){
+        padding: 5px 50px;
+        font-size: 12px;
+    }
+    @media(max-width: 720px) {
+        padding: 5px 20px;
+        font-size: 8px;
+    }
+    }
+}
+.first__box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.second__box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: right;
+}
+.img__menu{
+    width: 100%;
+    height: 100%;
+}
+
+.first__box-cont{
+    padding-left: 50px;
+    padding-top: 50px;
+    @media(max-width: 920px){
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+} 
+
+.second__box-cont{
+    padding-right: 50px;
+    padding-top: 50px;
+    @media(max-width: 920px){
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+}
+
+.sbox__title{
+    padding-bottom: 30px;
+    font-size: 48px;
+    font-weight: 400;
+    @media(max-width: 1775px) {
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    @media(max-width: 720px) {
+        font-size: 13px;
+    }
+}
+
+.sbox__cont{
+    font-size: 20px;
+    line-height: 45px;
+    font-family: 'Playfair Display';
+    padding-left: 180px;
+    padding-bottom: 50px;
+    @media(max-width: 1775px) {
+        padding-bottom: 20px;
+        font-size: 12px;
+    }
+    @media(max-width: 1240px){
+        line-height: 12px;
+        padding-left: 50px;
+    }
+    @media(max-width: 600px) {
+        font-size: 7px;
+        line-height: 7px;
+        padding-left: 20px;
+    }
+}
+
+
+// extra starts 
+
+.extra{
+    &__info{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        @media(max-width: 1240px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    &__box{
+        position: relative;
+        background: #FFFFFF;
+    }
+    &__img-age{
+        width: 100%;
+        height: 550px;
+        height: 100%;
+    }
+    &__title{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        font-size: 48px;
+        color: #FFFFFF;
+        &-dark{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            font-size: 48px;
+            color: #000000;
+            @media(max-width: 960px) {
+                font-size: 20px;
+            }
+            @media(max-width: 720px) {
+                top: 20px;
+                left: 20px;
+                font-size: 5px;
+            }
+        }
+        @media(max-width: 960px) {
+            font-size: 20px;
+        }
+        @media(max-width: 720px) {
+            top: 20px;
+            left: 20px;
+            font-size: 5px;
+        }
+    }
+}
+
+
+

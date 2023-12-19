@@ -1,0 +1,30 @@
+header.header 
+    nav.header
+        .nav 
+            .menu
+                a.header__btn(href="#") 
+                    span.header__bars
+                    span.header__bars
+                    span.header__bars
+                a.res__text(href="#footer")  RESERVATION
+            .head 
+                .header__list 
+                    .header__logo 
+                        a.logo__img(href="index.html")
+                            img(src="../assets/img/logo.png", alt="")
+                    - var links = [{name:'MENU', url:'menu.html'}, {name:'ABOUT', url:'#'}, {name:'RESERVATIONS', url:'#'}, {name:'NEWS', url:'#'},{name:'EVENTS', url:'events.html'}, {name:'CAREERS', url:'#'}, {name:'CONTACT', url:'#'}]
+                    each val in links 
+                        li
+                            a.header__link(href=val.url) #{val.name} 
+                    .more__links 
+                        a.facebook(href="#")
+                            img(src="../assets/img/facebook.png", alt="")
+                        a.instagram(href="#") 
+                            img(src="../assets/img/instagram.png", alt="")
+                        a.telegram(href="#") 
+                            img(src="../assets/img/telegram.png", alt="")
+                    a.language(href="#") 
+                        span.en EN
+                        |/RU
+    //- header complete
+.shadow 
